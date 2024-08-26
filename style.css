@@ -185,13 +185,6 @@ body {
     margin: 0.5rem 0;
   }
 
-  /* .skills {
-    height: 8px;
-    width: 100%; 
-    border-radius: 5px;
-    background-color: var(--q);
-} */
-
 .skill_prgs {
     display: flex;
     flex-direction: column;
@@ -229,6 +222,19 @@ body {
     height: 8px;
     border-radius:5px ;
 } 
+@media (max-width: 540px){
+    .p_bar {
+        width: 50vh; 
+        background-color: var(--q); 
+        height: 8px;
+        border-radius:5px ;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; 
+        margin: 0.5rem 0;
+      }
+}
+
 
 
 .card:hover{
