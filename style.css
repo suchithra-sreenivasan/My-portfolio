@@ -12,6 +12,15 @@ body {
 .navbar {
     overflow: hidden; 
 }
+.navbar {
+    overflow: hidden;
+    width: 100%; /* Ensure it does not overflow */
+}
+
+.container-fluid {
+    padding-left: 15px; /* Adjust padding to avoid overflow */
+    padding-right: 15px; /* Adjust padding to avoid overflow */
+}
 
 :root{
     --x:#D83F87;
@@ -38,6 +47,11 @@ body {
     border-radius: 30%;
     background-color: var(--q);
     color: white;
+}
+.profile_img img {
+    width: 100%;
+    max-width: 300px; /* Adjust based on your design */
+    height: auto; /* Maintain aspect ratio */
 }
 
 @media (max-width: 768px) {
@@ -97,6 +111,28 @@ body {
         width: 100%;
     }
 }
+body {
+    overflow-x: hidden; 
+}
+
+.container {
+    max-width: 100%; 
+}
+
+.profile_info, .profile_img {
+    padding: 15px; 
+    box-sizing: border-box; 
+}
+
+.profile_img img {
+    max-width: 100%; 
+    height: auto;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
 
 
 
@@ -140,6 +176,7 @@ body {
 /* .skills */
 #skills{
     background-color: #d5dddd;
+    
 }
 .focus {
     display: flex;
@@ -159,7 +196,7 @@ body {
 }
 
 .p_bar {
-    width: 60vh; 
+    width: 90%; 
     background-color: var(--q); 
     height: 8px;
     border-radius:5px ;
@@ -169,12 +206,12 @@ body {
     margin: 0.5rem 0;
   }
 
-.skill_prgs {
+/* .skill_prgs {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+} */
 .htl {
     width: 90%; 
     background-color: var(--y); 
@@ -208,7 +245,7 @@ body {
 } 
 @media (max-width: 540px){
     .p_bar {
-        width: 50vh; 
+        width: 80%; 
         background-color: var(--q); 
         height: 8px;
         border-radius:5px ;
@@ -232,6 +269,43 @@ body {
 
     to {
         opacity: 1;
+    }
+}
+body {
+    overflow-x: hidden;
+}
+
+#projects {
+    max-width: 100%; 
+    padding: 15px; 
+}
+
+.card {
+    box-sizing: border-box; 
+    max-width: 100%; 
+    margin: 0 auto; 
+}
+
+#projects .row {
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#projects .container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px; 
     }
 }
 
@@ -301,3 +375,26 @@ body {
     color:#aaa;
     margin-bottom:0;
   }
+
+  body {
+    overflow-x: hidden;
+}
+
+#skills {
+    padding-left: 15px; 
+    padding-right: 15px;
+}
+
+#skills .row {
+    margin-left: 0; 
+    margin-right: 0; 
+}
+
+.skill_prgs .p_bar {
+    width: 100%; 
+    overflow: hidden; 
+}
+
+.heading, .focus, .skill_prgs {
+    word-wrap: break-word; 
+}
